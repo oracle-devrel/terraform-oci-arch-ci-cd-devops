@@ -4,7 +4,7 @@
 
 module "oci-oke" {
   count                                                                       = var.create_new_oke_cluster ? 1 : 0
-  source                                                                      = "github.com/oracle-devrel/oci-oke"
+  source                                                                      = "github.com/oracle-devrel/terraform-oci-arch-oke"
   tenancy_ocid                                                                = var.tenancy_ocid
   compartment_ocid                                                            = local.oke_compartment_id
   oke_cluster_name                                                            = "${var.app_name} (${random_string.deploy_id.result})"
