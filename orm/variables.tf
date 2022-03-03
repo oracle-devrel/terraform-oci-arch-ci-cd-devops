@@ -51,7 +51,7 @@ variable "repository_description" {
 }
 
 variable "git_repo" {
-  default = "https://github.com/oracle-devrel/oci-devops-node.git"
+  default = "https://github.com/oracle-quickstart/oci-devops-node.git"
 }
 
 variable "git_repo_name" {
