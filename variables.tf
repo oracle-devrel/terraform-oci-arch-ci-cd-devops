@@ -98,6 +98,10 @@ variable "build_pipeline_stage_display_name" {
   default = "nodejs-build-pipeline"
 }
 
+variable "build_pipeline_stage_description" {
+  default = "NodeJS Build Pipeline"
+}
+
 variable "deliver_artifact_stage_display_name" {
   default = "deliver-artifact"
 }
@@ -169,7 +173,7 @@ variable "deploy_artifact_type" {
 }
 
 variable "deploy_pipeline_description" {
-  default = "Devops CI/CD Pipleline demo for OKE"
+  default = "Devops CI/CD Pipeline demo for OKE"
 }
 
 variable "deploy_artifact_source_type" {
