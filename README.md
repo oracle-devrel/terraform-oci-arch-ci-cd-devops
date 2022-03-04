@@ -76,7 +76,7 @@ oci_username       = "<oci_username>
 oci_user_authtoken = "<oci_user_authtoken>" 
 # You can get the auth token from your Profile menu -> click User Settings -> On left side  click *Auth Tokens -> Generate Token
 
-````
+```
 
 Deploy:
 
@@ -102,3 +102,17 @@ When you no longer need the deployment, you can run this command to destroy it:
     terraform destroy
 
 Note: Application deployment within OKE will lead to OCI LoadBalancer provisioning, created outside the Terraform realm. Consequently, terraform destroy operation will not be able to destroy OKE as dependent LB will stay untouched. Therefore you should destroy LB from OCI Console perspective beforehand. Then you can continue with terraform destroy command.
+
+## Attribution & Credits
+Initially, this project was created and distributed in [GitHub Oracle QuickStart space](https://github.com/oracle-quickstart). For that reason, we would like to thank all the involved contributors enlisted below:
+- Kartik Hedge (https://github.com/KartikShrikantHedge)
+- Nuno Gonçalves (https://github.com/nugoncal)
+- Lukasz Feldman (https://github.com/lfeldman)
+- Nuno Gonçalves (https://github.com/nugoncal)
+
+## License
+Copyright (c) 2022 Oracle and/or its affiliates.
+
+Licensed under the Universal Permissive License (UPL), Version 1.0.
+
+See [LICENSE](LICENSE) for more details.
