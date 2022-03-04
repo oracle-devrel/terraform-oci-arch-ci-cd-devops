@@ -29,3 +29,7 @@ output "kubeconfig_for_kubectl" {
   value       = "export KUBECONFIG=./generated/kubeconfig"
   description = "If using Terraform locally, this command set KUBECONFIG environment variable to run kubectl locally"
 }
+
+output "LB_IP" {
+  value = data.oci_load_balancer_load_balancers.LBs.load_balancers[0].ip_addresses
+}
