@@ -31,11 +31,7 @@ resource "oci_devops_build_pipeline_stage" "test_build_pipeline_stage" {
   }
 
   build_spec_file                    = var.build_pipeline_stage_build_spec_file
-<<<<<<< HEAD
   description                        = var.build_pipeline_stage_description
-=======
-  description                        = var.build_pipeline_stage_display_name
->>>>>>> c02d2d86f80c378206a45361d5ac48af5ecf8cff
   display_name                       = var.build_pipeline_stage_display_name
   image                              = var.build_pipeline_stage_image
   stage_execution_timeout_in_seconds = var.build_pipeline_stage_stage_execution_timeout_in_seconds
