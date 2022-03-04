@@ -106,7 +106,6 @@ Note: Application deployment within OKE will lead to OCI LoadBalancer provisioni
 ## Attribution & Credits
 Initially, this project was created and distributed in [GitHub Oracle QuickStart space](https://github.com/oracle-quickstart). For that reason, we would like to thank all the involved contributors enlisted below:
 - Kartik Hedge (https://github.com/KartikShrikantHedge)
-- Nuno Gonçalves (https://github.com/nugoncal)
 - Lukasz Feldman (https://github.com/lfeldman)
 - Nuno Gonçalves (https://github.com/nugoncal)
 
