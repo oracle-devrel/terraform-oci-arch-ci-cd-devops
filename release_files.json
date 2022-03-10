@@ -1,7 +1,7 @@
 [
     {
       "action": "create_zip",
-      "file_name": "terraform-oci-arch-spring-boot-stack-latest.zip",
+      "file_name": "terraform-oci-arch-ci-cd-devops-stack-latest.zip",
       "files": [
         {
           "src_pattern": "*.tf",
@@ -33,6 +33,6 @@
     },
     {
       "action": "upload_file",
-      "file_name": "terraform-oci-arch-spring-boot-stack-latest.zip"
+      "file_name": "terraform-oci-arch-ci-cd-devops-stack-latest.zip"
     }
   ]
