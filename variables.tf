@@ -18,7 +18,7 @@ variable "oci_user_authtoken" {}
 
 variable "release" {
   description = "Reference Architecture Release (OCI Architecture Center)"
-  default     = "1.0.4"
+  default     = "1.0.5"
 }
 
 variable "project_logging_config_retention_period_in_days" {
@@ -98,8 +98,8 @@ variable "build_pipeline_stage_display_name" {
   default = "nodejs-build-pipeline"
 }
 
-variable "build_pipeline_stage_description" {
-  default = "NodeJS Build Pipeline"
+variable "build_pipeline_stage_description"{
+  default = "nodejs managed build stage"
 }
 
 variable "deliver_artifact_stage_display_name" {
@@ -207,5 +207,4 @@ variable "execute_deployment" {
 variable "build_pipeline_stage_is_pass_all_parameters_enabled" {
   default = true
 }
-
 

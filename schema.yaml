@@ -26,6 +26,7 @@ variableGroups:
   - deploy_pipeline_deploy_pipeline_parameters_items_name
   - build_pipeline_stage_build_pipeline_stage_predecessor_collection_items_id
   - build_pipeline_stage_build_pipeline_stage_type
+  - build_pipeline_stage_description
   - build_pipeline_stage_deliver_artifact_stage_type
   - build_pipeline_stage_deploy_stage_type
   - build_pipeline_stage_build_source_collection_items_branch
@@ -622,5 +623,4 @@ variables:
     description: "DevOps Build Pipeline Deploy Stage - enable passing all parameters." 
     required: false
     visible: true
-
 
