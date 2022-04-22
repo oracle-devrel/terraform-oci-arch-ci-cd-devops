@@ -1,4 +1,4 @@
-## Copyright © 2022, Oracle and/or its affiliates. 
+## Copyright © 2021, Oracle and/or its affiliates. 
 ## All rights reserved. The Universal Permissive License (UPL), Version 1.0 as shown at http://oss.oracle.com/licenses/upl
 
 resource "oci_devops_build_pipeline_stage" "test_build_pipeline_stage" {
@@ -30,8 +30,8 @@ resource "oci_devops_build_pipeline_stage" "test_build_pipeline_stage" {
     }
   }
 
-  build_spec_file                    = var.build_pipeline_stage_build_spec_file
-  description                        = var.build_pipeline_stage_description
+  build_spec_file = var.build_pipeline_stage_build_spec_file
+  description = var.build_pipeline_stage_description
   display_name                       = var.build_pipeline_stage_display_name
   image                              = var.build_pipeline_stage_image
   stage_execution_timeout_in_seconds = var.build_pipeline_stage_stage_execution_timeout_in_seconds
