@@ -173,7 +173,7 @@ variable "deploy_artifact_type" {
 }
 
 variable "deploy_pipeline_description" {
-  default = "Devops CI/CD Pipleline demo for OKE"
+  default = "Devops CI/CD Pipeline demo for OKE"
 }
 
 variable "deploy_artifact_source_type" {
