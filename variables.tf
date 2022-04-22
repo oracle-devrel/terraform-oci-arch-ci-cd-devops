@@ -1,4 +1,4 @@
-## Copyright (c) 2022, Oracle and/or its affiliates.
+## Copyright (c) 2021, Oracle and/or its affiliates.
 ## All rights reserved. The Universal Permissive License (UPL), Version 1.0 as shown at http://oss.oracle.com/licenses/upl
 
 variable "tenancy_ocid" {}
@@ -18,7 +18,7 @@ variable "oci_user_authtoken" {}
 
 variable "release" {
   description = "Reference Architecture Release (OCI Architecture Center)"
-  default     = "1.0.4"
+  default     = "1.0.3"
 }
 
 variable "project_logging_config_retention_period_in_days" {
@@ -98,8 +98,8 @@ variable "build_pipeline_stage_display_name" {
   default = "nodejs-build-pipeline"
 }
 
-variable "build_pipeline_stage_description" {
-  default = "NodeJS Build Pipeline"
+variable "build_pipeline_stage_description"{
+  default = "nodejs managed build stage"
 }
 
 variable "deliver_artifact_stage_display_name" {
@@ -173,7 +173,7 @@ variable "deploy_artifact_type" {
 }
 
 variable "deploy_pipeline_description" {
-  default = "Devops CI/CD Pipeline demo for OKE"
+  default = "Devops CI/CD Pipleline demo for OKE"
 }
 
 variable "deploy_artifact_source_type" {
@@ -207,5 +207,4 @@ variable "execute_deployment" {
 variable "build_pipeline_stage_is_pass_all_parameters_enabled" {
   default = true
 }
-
 
