@@ -3,9 +3,9 @@
 
 variable "tenancy_ocid" {}
 variable "compartment_ocid" {}
-#variable "user_ocid" {}
-#variable "fingerprint" {}
-#variable "private_key_path" {}
+# variable "user_ocid" {}
+# variable "fingerprint" {}
+# variable "private_key_path" {}
 variable "region" {}
 
 variable "app_name" {
@@ -18,7 +18,7 @@ variable "oci_user_authtoken" {}
 
 variable "release" {
   description = "Reference Architecture Release (OCI Architecture Center)"
-  default     = "1.0.4"
+  default     = "1.0.5"
 }
 
 variable "project_logging_config_retention_period_in_days" {
@@ -96,6 +96,10 @@ variable "build_pipeline_stage_deliver_artifact_collection_items_artifact_name" 
 
 variable "build_pipeline_stage_display_name" {
   default = "nodejs-build-pipeline"
+}
+
+variable "build_pipeline_stage_description"{
+  default = "nodejs managed build stage"
 }
 
 variable "deliver_artifact_stage_display_name" {
@@ -203,5 +207,4 @@ variable "execute_deployment" {
 variable "build_pipeline_stage_is_pass_all_parameters_enabled" {
   default = true
 }
-
 
