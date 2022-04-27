@@ -65,7 +65,7 @@ resource "null_resource" "pushcode" {
   depends_on = [null_resource.copyfiles]
 
   provisioner "local-exec" {
-    command = "cd ./${oci_devops_repository.test_repository.name}; git config --global user.email 'test@example.com'; git config --global user.name '${var.oci_username}';git add .; git commit -m 'added latest files'; git push origin '${var.repository_default_branch}'"
+    command = "cd ./${oci_devops_repository.test_repository.name}; git config --local user.email 'test@example.com'; git config --local user.name '${var.oci_username}';git add .; git commit -m 'added latest files'; git push origin '${var.repository_default_branch}'"
   }
 }
 
