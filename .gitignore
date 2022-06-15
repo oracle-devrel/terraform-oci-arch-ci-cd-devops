@@ -18,6 +18,8 @@
 # Icon must end with two \r
 Icon
 
+# downloaded repos
+oci-devops-node
 
 # Thumbnails
 ._*
