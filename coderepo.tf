@@ -55,7 +55,7 @@ resource "null_resource" "copyfiles" {
   depends_on = [null_resource.clonerepo]
 
   provisioner "local-exec" {
-    command = "cd ${var.git_repo_name}; rsync -a --exclude='.*' . ../${oci_devops_repository.test_repository.name}; cd .."
+    command = "rm -rf ${var.git_repo_name}/.git; cp -pr ${var.git_repo_name}/* ${oci_devops_repository.test_repository.name}/; cd .."
   }
 }
 
