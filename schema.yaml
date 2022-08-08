@@ -16,9 +16,6 @@ variableGroups:
   - compartment_ocid
   - region
   - oke_compartment_description
-  - user_ocid
-  - fingerprint
-  - private_key_path
   - network_cidrs
   - node_pool_boot_volume_size_in_gbs
   - deploy_pipeline_deploy_pipeline_parameters_items_default_value
@@ -315,16 +312,10 @@ variables:
         - create_vault_policies_for_group
 
   k8s_version:
-    type: enum
-    enum: # Necessary hardcoded supported versions, as ORM does not retrieve the versions from OKE.
-      - "Latest"
-      - "v1.19.7"
-      - "v1.18.10"
-      - "v1.17.13"
-      - "v1.16.15"
+    type: string
     title: "Kubernetes Version"
     required: false
-    default: "Latest"
+    description: If other than 'Latest', type the version number without a leading 'v', e.g. 1.23.4
     visible:
       and:
         - create_new_oke_cluster
