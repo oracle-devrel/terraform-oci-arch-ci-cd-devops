@@ -71,3 +71,10 @@ data "oci_objectstorage_namespace" "ns" {
 data "oci_containerengine_cluster_kube_config" "oke_cluster_kube_config" {
   cluster_id = var.create_new_oke_cluster ? module.oci-oke[0].cluster.id : var.existent_oke_cluster_id
 }
+
+
+data "oci_load_balancer_load_balancers" "LBs" {
+  compartment_id = var.compartment_ocid
+  depends_on = [oci_devops_build_run.test_build_run_1]
+
+}
